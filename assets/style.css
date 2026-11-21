@@ -1,0 +1,21 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#F7F3EA;color:#1B2233;font-family:'EB Garamond',Garamond,Georgia,serif}
+a{color:#7A5A1E}a:hover{color:#1B2233}
+img{max-width:100%}
+.page{min-height:100vh;display:flex;flex-direction:column}
+.hdr{position:sticky;top:0;z-index:20;background:#F7F3EA;transition:background .25s ease,box-shadow .25s ease}
+.nav a{color:#1B2233;text-decoration:none}.nav a:hover{color:#7A5A1E}.nav a.cur{color:#7A5A1E}
+.hdr.scrolled{background:#121A2E;box-shadow:0 1px 6px rgba(0,0,0,.18)}
+.hdr.scrolled .nav a{color:#E8DFC9}.hdr.scrolled .nav a:hover{color:#C9A35E}.hdr.scrolled .nav a.cur{color:#C9A35E}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+.chev{transform:rotate(90deg)}
+details[open] .chev{transform:rotate(-90deg)}
+summary:focus-visible{outline:2px solid #7A5A1E;outline-offset:4px}
+.evrow{flex-wrap:nowrap}
+@media (max-width:560px){.evrow{flex-wrap:wrap}}
+.lightbox{position:fixed;inset:0;z-index:50;background:rgba(10,14,26,.92);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.lightbox button{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:22px;border:1px solid rgba(232,223,201,.5);background:rgba(18,26,46,.9);color:#E8DFC9;font-size:22px;line-height:1;cursor:pointer}

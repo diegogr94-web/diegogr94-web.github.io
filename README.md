@@ -1,1 +1,3 @@
-# diegogr94-web.github.io
+# diegogarciarincon.com
+
+Source of Diego García Rincón’s academic website, published with GitHub Pages.
