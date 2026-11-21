@@ -21,4 +21,4 @@ summary:focus-visible{outline:2px solid #7A5A1E;outline-offset:4px}
 .lightbox button{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:22px;border:1px solid rgba(232,223,201,.5);background:rgba(18,26,46,.9);color:#E8DFC9;font-size:22px;line-height:1;cursor:pointer}
 
 @media (max-width:600px){.nav{justify-content:center!important;gap:24px!important;padding:14px 16px!important}:root{--ht:.82;--hb:.63;--hf:38px}}
-@media (max-width:640px){.aboutrow{flex-wrap:wrap!important}}
+@media (max-width:640px){.aboutrow{flex-wrap:wrap!important}.navname{display:none}}
