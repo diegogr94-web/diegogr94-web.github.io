@@ -44,9 +44,9 @@
 .tc-intro{margin:18px 0 18px;font-size:18px;color:#5B6475;font-style:italic;max-width:700px}
 /* variant a: viewer */
 .vw{max-width:680px}
-.vw-stage{position:relative}
-.vw-fig{display:none;margin:0}
-.vw-fig.on{display:block}
+.vw-stage{display:grid}
+.vw-fig{grid-area:1/1;margin:0;visibility:hidden}
+.vw-fig.on{visibility:visible}
 .vw-fig button{display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}
 .vw-fig img{display:block;width:100%;height:auto;border:1px solid #E2DAC6;box-shadow:0 1px 4px rgba(27,34,51,.14)}
 .vw-cap{margin:12px 0 0;font-size:17px;line-height:1.5}
