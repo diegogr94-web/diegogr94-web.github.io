@@ -14,7 +14,7 @@
     var img=box.querySelector('img');
     function close(){ box.classList.remove('open'); img.removeAttribute('src'); }
     document.querySelectorAll('[data-zoom]').forEach(function(b){
-      b.addEventListener('click',function(){ img.src=b.getAttribute('data-zoom'); img.alt=b.getAttribute('aria-label')||'Poster'; box.classList.add('open'); box.querySelector('button').focus(); });
+      b.addEventListener('click',function(){ img.src=b.getAttribute('data-zoom'); img.alt=b.getAttribute('aria-label')||'Poster'; var fc=box.querySelector('figcaption'); if(fc) fc.textContent=b.getAttribute('data-caption')||''; box.classList.add('open'); box.querySelector('button').focus(); });
     });
     box.addEventListener('click',close);
     document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&box.classList.contains('open')) close(); });
